@@ -9,3 +9,6 @@ reddit = praw.Reddit(
     password=os.getenv('BOT_PASSWORD'),
     user_agent=os.getenv('BOT_USER_AGENT'),
 )       
+
+for submission in reddit.subreddit('SiteSummarizerBot').stream.submissions(skip_existing=True):
+    text = submission.selftext.strip()
