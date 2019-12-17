@@ -8,4 +8,4 @@ reddit = praw.Reddit(
     username=os.getenv('BOT_USERNAME'),
     password=os.getenv('BOT_PASSWORD'),
     user_agent=os.getenv('BOT_USER_AGENT'),
-)
+)       
